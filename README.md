@@ -14,11 +14,11 @@ The problems I had were that I needed it to be in a modal, because of nested Scr
 - There is no ajax support.
 
 ## Preview
-
-![preview 1](https://github.com/renrizzolo/react-native-sectioned-multi-select/blob/master/previews/example_recording-1.gif)
-![preview 2](https://github.com/renrizzolo/react-native-sectioned-multi-select/blob/master/previews/example_recording-2.gif)
-![preview 3](https://github.com/renrizzolo/react-native-sectioned-multi-select/blob/master/previews/example_recording-3.gif)
-![preview 4](https://github.com/renrizzolo/react-native-sectioned-multi-select/blob/master/previews/example_recording-4.gif)
+![preview multilevel](/previews/preview-multilevel.png)
+![preview 1](/previews/example_recording-1.gif)
+![preview 2](/previews/example_recording-2.gif)
+![preview 3](/previews/example_recording-3.gif)
+![preview 4](/previews/example_recording-4.gif)
 
 ## Usage
 
@@ -180,6 +180,8 @@ Props, there are lots.
 | -------------------------- | ------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | loading                    | false                     | bool   | set the loading state, shows `loadingComponent` if true                                                                                                      |
 | single                     | false                     | bool   | allow only one selection                                                                                                                                     |
+| multiLevel                 | false                     | bool   | allows multiple children levels, using defined `uniqueKey`, `subKey`, `displayKey`                                                                                    |
+| maxMultiLevel              | 3                         | number | set maximum number of children levels                                                                                                      |
 | showDropDowns              | true                      | bool   | whether to allow dropdown toggles to show/hide the sub items (if false, sub items are always shown)                                                          |
 | expandDropDowns            | false                     | bool   | when using `showDropDowns`, set to true to expand all the dropdowns on mount                                                                                 |
 | animateDropDowns           | true                      | bool   | whether to animate toggling of dropdowns                                                                                                                     |
@@ -265,29 +267,31 @@ These are the available colors and their defaults:
 You can pass a `styles` object to style it how you like.
 
 These are the styles you can change:  
- `container`
-`modalWrapper`
-`backdrop`
-`listContainer`  
+ `container`  
+ `modalWrapper`  
+ `backdrop`  
+ `listContainer`  
  `selectToggle`  
  `selectToggleText`  
+ `itemWrapper`  
  `item`  
  `selectedItem`  
+ `subItemWrapper`  
  `subItem`  
- `itemText`
-`selectedItemText`  
- `selectedSubItemText`
-`selectedSubItem`
-`subItemText`  
+ `itemText`  
+ `selectedItemText`  
+ `selectedSubItemText`  
+ `selectedSubItem`  
+ `subItemText`  
  `searchBar`  
  `center`  
  `separator`  
  `subSeparator`  
  `chipsWrapper`  
- `chipContainer`
-`parentChipContainer`
-`parentChipText`
-`chipText`  
+ `chipContainer`  
+ `parentChipContainer`  
+ `parentChipText`  
+ `chipText`  
  `chipIcon`  
  `searchTextInput`  
  `scrollView`  
